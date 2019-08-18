@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		8D191A6B23086C170019D960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D191A6A23086C170019D960 /* AppDelegate.swift */; };
-		8D191A6D23086C170019D960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D191A6C23086C170019D960 /* ViewController.swift */; };
 		8D191A7023086C170019D960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D191A6E23086C170019D960 /* Main.storyboard */; };
 		8D191A7223086C180019D960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D191A7123086C180019D960 /* Assets.xcassets */; };
 		8D191A7523086C180019D960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D191A7323086C180019D960 /* LaunchScreen.storyboard */; };
+		8D191A8223087C8E0019D960 /* QuoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D191A8123087C8E0019D960 /* QuoteListViewController.swift */; };
+		8D191A862308E2110019D960 /* QuotesVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D191A852308E2110019D960 /* QuotesVO.swift */; };
+		8D191A892308E5090019D960 /* QuotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D191A872308E5090019D960 /* QuotesTableViewCell.swift */; };
+		8D191A8A2308E5090019D960 /* QuotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D191A882308E5090019D960 /* QuotesTableViewCell.xib */; };
+		8D191A8D2308E6860019D960 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D191A8C2308E6860019D960 /* Extensions.swift */; };
+		8D191A8F2308EF3F0019D960 /* QuotesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D191A8E2308EF3F0019D960 /* QuotesDetailsViewController.swift */; };
+		8D191A912308EF4F0019D960 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D191A902308EF4F0019D960 /* Router.swift */; };
+		8D191A932308EFC40019D960 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D191A922308EFC40019D960 /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D191A6723086C160019D960 /* SimpleTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D191A6A23086C170019D960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D191A6C23086C170019D960 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D191A6F23086C170019D960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D191A7123086C180019D960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D191A7423086C180019D960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D191A7623086C180019D960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D191A8123087C8E0019D960 /* QuoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteListViewController.swift; sourceTree = "<group>"; };
+		8D191A852308E2110019D960 /* QuotesVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesVO.swift; sourceTree = "<group>"; };
+		8D191A872308E5090019D960 /* QuotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewCell.swift; sourceTree = "<group>"; };
+		8D191A882308E5090019D960 /* QuotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuotesTableViewCell.xib; sourceTree = "<group>"; };
+		8D191A8C2308E6860019D960 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8D191A8E2308EF3F0019D960 /* QuotesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDetailsViewController.swift; sourceTree = "<group>"; };
+		8D191A902308EF4F0019D960 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		8D191A922308EFC40019D960 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,85 @@
 		8D191A6923086C160019D960 /* SimpleTableView */ = {
 			isa = PBXGroup;
 			children = (
+				8D191A8B2308E6760019D960 /* utils */,
+				8D191A832308E1F70019D960 /* data */,
+				8D191A7C23086D400019D960 /* cells */,
+				8D191A7E23086D530019D960 /* viewcontrollers */,
+				8D191A7D23086D490019D960 /* storyboards */,
 				8D191A6A23086C170019D960 /* AppDelegate.swift */,
-				8D191A6C23086C170019D960 /* ViewController.swift */,
-				8D191A6E23086C170019D960 /* Main.storyboard */,
 				8D191A7123086C180019D960 /* Assets.xcassets */,
 				8D191A7323086C180019D960 /* LaunchScreen.storyboard */,
 				8D191A7623086C180019D960 /* Info.plist */,
 			);
 			path = SimpleTableView;
+			sourceTree = "<group>";
+		};
+		8D191A7C23086D400019D960 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				8D191A8023086D740019D960 /* swifts */,
+				8D191A7F23086D6E0019D960 /* xibs */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		8D191A7D23086D490019D960 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8D191A6E23086C170019D960 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		8D191A7E23086D530019D960 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				8D191A8123087C8E0019D960 /* QuoteListViewController.swift */,
+				8D191A8E2308EF3F0019D960 /* QuotesDetailsViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		8D191A7F23086D6E0019D960 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				8D191A882308E5090019D960 /* QuotesTableViewCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		8D191A8023086D740019D960 /* swifts */ = {
+			isa = PBXGroup;
+			children = (
+				8D191A872308E5090019D960 /* QuotesTableViewCell.swift */,
+			);
+			path = swifts;
+			sourceTree = "<group>";
+		};
+		8D191A832308E1F70019D960 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				8D191A842308E2020019D960 /* vos */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		8D191A842308E2020019D960 /* vos */ = {
+			isa = PBXGroup;
+			children = (
+				8D191A852308E2110019D960 /* QuotesVO.swift */,
+			);
+			path = vos;
+			sourceTree = "<group>";
+		};
+		8D191A8B2308E6760019D960 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8D191A8C2308E6860019D960 /* Extensions.swift */,
+				8D191A902308EF4F0019D960 /* Router.swift */,
+				8D191A922308EFC40019D960 /* AppConstants.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D191A8A2308E5090019D960 /* QuotesTableViewCell.xib in Resources */,
 				8D191A7523086C180019D960 /* LaunchScreen.storyboard in Resources */,
 				8D191A7223086C180019D960 /* Assets.xcassets in Resources */,
 				8D191A7023086C170019D960 /* Main.storyboard in Resources */,
@@ -135,8 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D191A6D23086C170019D960 /* ViewController.swift in Sources */,
+				8D191A8D2308E6860019D960 /* Extensions.swift in Sources */,
+				8D191A892308E5090019D960 /* QuotesTableViewCell.swift in Sources */,
 				8D191A6B23086C170019D960 /* AppDelegate.swift in Sources */,
+				8D191A932308EFC40019D960 /* AppConstants.swift in Sources */,
+				8D191A912308EF4F0019D960 /* Router.swift in Sources */,
+				8D191A862308E2110019D960 /* QuotesVO.swift in Sources */,
+				8D191A8F2308EF3F0019D960 /* QuotesDetailsViewController.swift in Sources */,
+				8D191A8223087C8E0019D960 /* QuoteListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
